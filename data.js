@@ -14,12 +14,16 @@ var groups = [
                 label: "Systolic",
                 samples: [
                     {
-                        timestamp: 1420798224,
-                        value: 132
+                        timestamp: 8,
+                        value: 130
                     },
                     {
-                        timestamp: 1423742720,
-                        value: 128
+                        timestamp: 9,
+                        value: 122
+                    },
+                    {
+                        timestamp: 11,
+                        value: 134
                     }
                 ]
             },
