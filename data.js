@@ -4,8 +4,8 @@ var groups = [
         label: "Blood Pressure",
         measurements:[
             {
-                min: 90,
-                max: 129,
+                min: 95,
+                max: 140,
                 yellow_min: 80,
                 yellow_max: 130,
                 red_min: 70,
@@ -17,13 +17,9 @@ var groups = [
                         timestamp: 8,
                         value: 130
                     },
-                    {
-                        timestamp: 9,
-                        value: 122
-                    },
-                    {
-                        timestamp: 11,
-                        value: 134
+					{
+                        timestamp: 730,
+                        value: 101
                     }
                 ]
             },
@@ -38,11 +34,31 @@ var groups = [
                 label: "Diastolic",
                 samples: [
                     {
-                        timestamp: 1420798224,
+                        timestamp: 8,
                         value: 91
                     },
                     {
-                        timestamp: 1423742720,
+                        timestamp: 1930,
+                        value: 86
+                    }
+                ]
+            },
+			{
+                min: 60,
+                max: 80,
+                yellow_min: 50,
+                yellow_max: 85,
+                red_min: 40,
+                red_max: 90,
+                units: "mmHg",
+                label: "Mean Blood Pressure",
+                samples: [
+                    {
+                        timestamp: 8,
+                        value: 83.6
+                    },
+                    {
+                        timestamp: 1930,
                         value: 86
                     }
                 ]
@@ -50,85 +66,99 @@ var groups = [
         ]
     },
     {
-        label: "Composition",
+        label: "More Vitals",
         measurements:[
             {
-                min: 18.5,
-                max: 24.9,
-                yellow_min: 18,
-                yellow_max: 30,
-                red_min: 16,
-                red_max: 35,
+                min: 36.5,
+                max: 42,
+                yellow_min: 37,
+                yellow_max: 38.9,
+                red_min: 39,
+                red_max: 42,
                 units: "",
-                label: "Body Mass Index",
+                label: "Temperature",
                 samples: [
                     {
-                        timestamp: 1420798224,
-                        value: 25
+                        timestamp: 8,
+                        value: 37.5
                     },
                     {
-                        timestamp: 1423742720,
-                        value: 24.5
+                        timestamp: 1930,
+                        value: 37.5
                     }
                 ]
             },
             {
-                min: 70,
-                max: 88,
-                yellow_max: 88,
-                red_max: 90,
-                units: "cm",
-                label: "Waist Diameter",
+                min: 50,
+                max: 100,
+                yellow_max: 75,
+                red_max: 100,
+                units: "bpm",
+                label: "Heart Rate",
                 samples: [
                     {
-                        timestamp: 1420798224,
+                        timestamp: 8,
                         value: 75.3
                     },
                     {
-                        timestamp: 1423742720,
+                        timestamp: 1930,
                         value: 73.8
                     }
                 ]
-            }
-        ]
-    },
-
-    {
-        label: "Activity",
-        measurements:[
-            {
-                min: 8000,
-                max: 12000,
-                yellow_min: 5000,
-                red_min: 3000,
-                units: "steps",
-                label: "Steps per day",
+            },
+			{
+                min: 12,
+                max: 25,
+                yellow_max: 18,
+                red_max: 20,
+                units: "bpm",
+                label: "Respiratory Rate",
                 samples: [
                     {
-                        timestamp: 1420798224,
-                        value: 4952
+                        timestamp: 8,
+                        value: 18
                     },
                     {
-                        timestamp: 1423742720,
-                        value: 8632
+                        timestamp: 1930,
+                        value: 16
                     }
                 ]
             },
-            {
-                min: 150,
-                max: 300,
-                yellow_min: 75,
-                red_min: 40,
-                units: "minutes per week",
-                label: "Weekly moderate exercise",
+			{
+                min: 60,
+                max: 100,
+                yellow_min: 90,
+                yellow_max: 93.9,
+                red_min: 60,
+                red_max: 90,
+                units: "%",
+                label: "Oxigen Saturation",
                 samples: [
                     {
-                        timestamp: 1420798224,
-                        value: 20
+                        timestamp: 8,
+                        value: 100
                     },
                     {
-                        timestamp: 1423742720,
-                        value: 80
+                        timestamp: 1930,
+                        value: 95
+                    }
+                ]
+            },
+			{
+                min: 60,
+                max: 100,
+                yellow_max: 18,
+                red_max: 20,
+                units: "",
+                label: "Urine Output",
+                samples: [
+                    {
+                        timestamp: 8,
+                        value: 61
+                    },
+                    {
+                        timestamp: 1930,
+                        value: 111
                     }
                 ]
             }
@@ -146,11 +176,11 @@ var groups = [
                 label: "HDL (good cholesterol)",
                 samples: [
                     {
-                        timestamp: 1420798224,
+                        timestamp: 8,
                         value: 1.35
                     },
                     {
-                        timestamp: 1423742720,
+                        timestamp: 1930,
                         value: 1.25
                     }
                 ]
@@ -164,11 +194,11 @@ var groups = [
                 red_max: 3.33,
                 samples: [
                     {
-                        timestamp: 1420798224,
+                        timestamp: 8,
                         value: 3.25
                     },
                     {
-                        timestamp: 1423742720,
+                        timestamp: 1930,
                         value: 3.05
                     }
                 ]
@@ -182,60 +212,15 @@ var groups = [
                 label: "Triglycerides",
                 samples: [
                     {
-                        timestamp: 1420798224,
+                        timestamp: 8,
                         value: 2.3
                     },
                     {
-                        timestamp: 1423742720,
+                        timestamp: 1930,
                         value: 1.45
                     }
                 ]
             }
         ]
     },
-
-    {
-        label: "Sleep",
-        measurements:[
-            {
-                min: 7,
-                max: 9,
-                yellow_min: 6,
-                yellow_max: 11,
-                red_min: 5,
-                red_max: 12,
-                units: "hours",
-                label: "Time in Bed",
-                samples: [
-                    {
-                        timestamp: 1420798224,
-                        value: 6.5
-                    },
-                    {
-                        timestamp: 1423742720,
-                        value: 7.5
-                    }
-                ]
-            },
-            {
-                min: 85,
-                max: 100,
-                yellow_min: 75,
-                red_min: 65,
-                units: "%",
-                label: "Sleep efficiency",
-                samples: [
-                    {
-                        timestamp: 1420798224,
-                        value: 72
-                    },
-                    {
-                        timestamp: 1423742720,
-                        value: 87
-                    }
-                ]
-            }
-        ]
-    },
-
 ];
